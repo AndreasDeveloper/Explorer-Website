@@ -20,7 +20,6 @@
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     overflow: hidden;
     display: table;
     color: $color-grey-light;
@@ -53,7 +52,7 @@
 }
 
 // COORDINATES SETUP \\
-.coords {
+.coords-1 {
     font-size: 1.3rem;
     color: $color-blue-1;
     display: inline-block;
@@ -64,6 +63,17 @@
     left: -15rem;
     margin: 0;
     transform: rotate(-90deg) translateY(50%);
+}
+
+.coords-2 {
+    font-size: 1.3rem;
+    color: $color-blue-1;
+    display: inline-block;
+    position: relative;
+    top: 93%;
+    right: -27%;
+    letter-spacing: .2rem;
+    margin: 0;
 }
 
 /* ------------------------------------------- */

@@ -148,7 +148,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to right, #ffda79, #c4a148);
+  background-image: linear-gradient(to right, #09383E, #051d20);
   -webkit-background-clip: text;
   color: transparent;
   /*letter-spacing: .2rem;
@@ -283,6 +283,24 @@ body {
   100% {
     transform: rotate(360deg); } }
 
+/* ------------------------------------------- */
+/* ANIMATION FOR TYPWRITER
+/* ------------------------------------------- */
+.animate-typewriter {
+  animation: typewriter 4s steps(40) 1s 1 normal both, blinkTextCursor 500ms steps(40) infinite normal; }
+
+@keyframes typewriter {
+  from {
+    width: 0em; }
+  to {
+    width: 15.1em; } }
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: #0b454d; }
+  to {
+    border-right-color: transparent; } }
+
 /* - COMPONENTS FOLDER FILES - */
 /* ------------------------------------------- */
 /* ------------------------------------------- */
@@ -320,6 +338,20 @@ body {
   .btn:focus {
     outline: none;
     animation: pulsate 1s infinite; }
+
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+.tw {
+  position: relative;
+  top: 50%;
+  width: 15.1em;
+  margin: 0 auto;
+  border-right: 0.2rem solid #0b454d;
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%); }
 
 /* - LAYOUT FOLDER FILES - */
 /* ------------------------------------------- */
@@ -382,7 +414,6 @@ body {
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   overflow: hidden;
   display: table;
   color: #ecf0f1; }
@@ -408,7 +439,7 @@ body {
   width: 10rem;
   height: 10rem; }
 
-.coords {
+.coords-1 {
   font-size: 1.3rem;
   color: #09383E;
   display: inline-block;
@@ -419,6 +450,16 @@ body {
   left: -15rem;
   margin: 0;
   transform: rotate(-90deg) translateY(50%); }
+
+.coords-2 {
+  font-size: 1.3rem;
+  color: #09383E;
+  display: inline-block;
+  position: relative;
+  top: 93%;
+  right: -27%;
+  letter-spacing: .2rem;
+  margin: 0; }
 
 /* ------------------------------------------- */
 /* ELLIPSE SETUP 

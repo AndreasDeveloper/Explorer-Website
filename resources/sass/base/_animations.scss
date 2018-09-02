@@ -87,3 +87,37 @@
         transform: rotate(360deg);
     }
 }
+
+/* ------------------------------------------- */
+/* ANIMATION FOR TYPWRITER
+/* ------------------------------------------- */
+
+.animate-typewriter {
+
+    animation: typewriter 4s steps(40) 1s 1 normal both,
+    blinkTextCursor 500ms steps(40) infinite normal;
+}
+
+// ANIMATION FOR TYPWRITER | 1 | 
+@keyframes typewriter {
+
+    from {
+        width: 0em;
+    }
+
+    to {
+        width: 15.1em;
+    }
+}
+
+// ANIMATION FOR BLINK TEXT CURSOR | 2 | 
+@keyframes blinkTextCursor {
+
+    from {
+        border-right-color: $color-primary;
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
