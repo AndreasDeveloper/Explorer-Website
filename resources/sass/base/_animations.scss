@@ -59,3 +59,31 @@
             }
         }
 /* --- ANIMATION FOR HEADER BUTTON SETUP | ENDS --- */ 
+
+/* ------------------------------------------- */
+/* ORBIT ANIMATION | FOR ELLIPSE IN THE HEADER
+/* ------------------------------------------- */
+
+// ROTATION OF THE 2 LINES
+@keyframes ellipseRotate {
+
+    0% {
+        transform: rotate(-45deg);
+    }
+
+    100% {
+        transform: rotate(-405deg);
+    }
+}
+
+// ROTATION OF THE SMALL CIRCLE
+@keyframes ellipseOrbit {
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
