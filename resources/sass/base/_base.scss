@@ -36,6 +36,9 @@ html {
 body {
     box-sizing: border-box;
     /*padding: 3rem;  /* Gives padding all around the body element, making white space on the sides. */
+    perspective: 1px;
+    transform-style: preserve-3d;       // Style in order for Parallax Effect / Scrolling to work
+    overflow-y: scroll;
 
     // * --- MEDIA QUERIES --- * \\
     @include respond(tab-port) {

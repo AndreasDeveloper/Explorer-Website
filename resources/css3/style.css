@@ -218,7 +218,10 @@ html {
 
 body {
   box-sizing: border-box;
-  /*padding: 3rem;  /* Gives padding all around the body element, making white space on the sides. */ }
+  /*padding: 3rem;  /* Gives padding all around the body element, making white space on the sides. */
+  perspective: 1px;
+  transform-style: preserve-3d;
+  overflow-y: scroll; }
   @media (max-width: 56.25em) {
     body {
       padding: 0; } }
@@ -287,7 +290,7 @@ body {
 /* ANIMATION FOR TYPWRITER
 /* ------------------------------------------- */
 .animate-typewriter {
-  animation: typewriter 4s steps(40) 1s 1 normal both, blinkTextCursor 500ms steps(40) infinite normal; }
+  animation: typewriter 4s steps(40) 1s 1 normal both, blinkTextCursor 0.5s steps(40) infinite normal; }
 
 @keyframes typewriter {
   from {
@@ -457,7 +460,7 @@ body {
   display: inline-block;
   position: relative;
   top: 93%;
-  right: -27%;
+  right: -28%;
   letter-spacing: .2rem;
   margin: 0; }
 
@@ -552,3 +555,8 @@ body {
   left: 34%; }
 
 /* - PAGES FOLDER FILES - */
+/* ------------------------------------------- */
+/* SECTION ABOUT | IN HOME PAGE
+/* ------------------------------------------- */
+.section-about {
+  padding-bottom: 100rem; }
