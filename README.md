@@ -6,7 +6,7 @@
 
 <b>FOCUS</b>
 
-- Focused was all on the new tech and pushing CSS3 and SASS to the limits. Getting maximum out of it. Used BEM methodology to make code readable and re-usable. Focused on new stuff, such as new button styles and animations, new layouts etc. 
+- Focused was all on the new tech and pushing CSS3 (GRID & FLEXBOX) and SASS to the limits. Getting maximum out of it. Used BEM methodology to make code readable and re-usable. Focused on new stuff, such as new button styles and animations, new layouts etc. 
 
 <b>TOOLS USED</b>
 
