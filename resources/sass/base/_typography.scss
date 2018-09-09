@@ -102,6 +102,15 @@ body {
     }
 }
 
+.heading-4 {
+    font-weight: 400;
+    font-size: 1.9rem;
+
+    // LIGHT AND DARK VERSION OF HEADING 4 \\
+    &--light { color: $color-grey-light-1; }
+    &--dark { color: $color-grey-dark-1; }
+}
+
 .paragraph {
     font-size: 1.6rem;
 

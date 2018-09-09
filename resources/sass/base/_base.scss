@@ -11,6 +11,7 @@
 }
 
 html {
+    box-sizing: border-box;
     /* DEFINES WHAT REM IS */
     font-size: 62.5%; /* Takes 62.5% of the default font size (16px). 100 / 16 = 62.5  */ /* || 1rem = 10px; 10px/16px = 62.5% || */
 
@@ -34,14 +35,34 @@ html {
 }
 
 body {
-    box-sizing: border-box;
-    /*padding: 3rem;  /* Gives padding all around the body element, making white space on the sides. */
-    perspective: 1px;
-    transform-style: preserve-3d;       // Style in order for Parallax Effect / Scrolling to work
-    overflow-y: scroll;
 
     // * --- MEDIA QUERIES --- * \\
     @include respond(tab-port) {
         padding: 0;
+    }
+
+    // GRID SETUP / LAYOUT SETUP | USE MEDIA QUERIES TO CHANGE GRID DEFINITIONS \\ 
+    .container {
+        display: grid;
+        grid-template-rows: 80vh min-content 40vw repeat(3, min-content);               
+        grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end] ) [center-end] minmax(6rem, 1fr) [full-end];   
+        // CONTENT WILL BE DISPLAYED (RESPONSIVE) BETWEEN ITS MINIMUM CONTENT AND 1400px 
+        // TWO 1fr's ARE THE EMPTY COLUMNS THAT CENTERS REST OF THE PAGES CONTENT
+        // SIDEBAR-START | SIDEBAR-END is the sidebar option
+        // FULL-START | FULL-END is the content that goes from the begining of the VW to the end of the VW
+        // CENTER-START | CENTER-END is the content that is centered for the VW
+
+        // * --- MEDIA QUERIES --- * \\
+        @media only screen and (max-width: $bp-largest) {
+            display: grid;
+            grid-template-rows: 6rem 80vh min-content 40vw repeat(3, min-content);               
+            grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end] ) [center-end] minmax(6rem, 1fr) [full-end];
+        }
+
+        // * --- MEDIA QUERIES --- * \\
+        @media only screen and (max-width: $bp-medium) {    
+            display: grid;
+            grid-template-rows: 6rem calc(100vh - 6rem); // USE CALC TO "MERGE" NAVIGATION ON TOP AND HEADER INTO THE ONE SECTION
+        }
     }
 }
