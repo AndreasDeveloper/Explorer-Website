@@ -13,14 +13,6 @@
 
 // CONTAINER THAT HOLDS EVERYTHING INSIDE OF THE HEADER PAGE
 .header-page-container {
-
-    // GRID SETUP \\
-    display: grid;
-    grid-template-rows: 100vh;
-    grid-template-columns: minmax(min-content, max-content);
-    grid-row-gap: 1.5rem;
-    justify-content: center;
-
     width: 100%;
     min-height: 100%;
     height: 105vh;

@@ -191,6 +191,21 @@ body {
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
 
+.section-text {
+  font-size: 2.1rem;
+  text-transform: uppercase;
+  color: #0b454d;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 50rem max-content 50rem;
+  grid-column-gap: 1.5rem;
+  align-items: center; }
+  .section-text::before, .section-text::after {
+    content: "";
+    height: .1rem;
+    display: block;
+    background-color: currentColor; }
+
 /* ------------------------------------------------ */
 /* HEADING SECONDARY BOX EFFECT | FEATURES SECTION
 /* ------------------------------------------------ */
@@ -454,11 +469,6 @@ body .container {
   margin: 0 auto 0; }
 
 .header-page-container {
-  display: grid;
-  grid-template-rows: 100vh;
-  grid-template-columns: minmax(min-content, max-content);
-  grid-row-gap: 1.5rem;
-  justify-content: center;
   width: 100%;
   min-height: 100%;
   height: 105vh;
@@ -609,7 +619,7 @@ body .container {
 .section-destination-1__pictures {
   background-color: #0b454d;
   grid-column: full-start / col-end 4;
-  background-image: linear-gradient(rgba(11, 69, 77, 0.5), rgba(11, 69, 77, 0.5)), url(../images/nyc-1.jpeg);
+  background-image: linear-gradient(rgba(11, 69, 77, 0.5), rgba(11, 69, 77, 0.5)), url(../images/yose-2.jpeg);
   background-size: cover;
   display: grid;
   grid-template-rows: repeat(7, 1fr);
@@ -659,6 +669,57 @@ body .container {
   font-style: italic;
   margin-bottom: 4rem; }
 
+/* ------------------------------------------- */
+/* DESTINATION 2 | IN HOME PAGE
+/* ------------------------------------------- */
+.section-destination-2__pictures {
+  background-color: #0b454d;
+  grid-column: full-start / col-end 4;
+  background-image: linear-gradient(rgba(11, 69, 77, 0.5), rgba(11, 69, 77, 0.5)), url(../images/glacier-1.jpeg);
+  background-size: cover;
+  display: grid;
+  grid-template-rows: repeat(7, 1fr);
+  grid-template-columns: repeat(7, 1fr);
+  align-items: center; }
+  @media only screen and (max-width: 50em) {
+    .section-destination-2__pictures {
+      grid-column: 1 / -1;
+      padding: 6rem; } }
+
+/* ------------------------------------------- */
+/* DESTINATION 3 | IN HOME PAGE
+/* ------------------------------------------- */
+.section-destination-3__pictures {
+  background-color: #0b454d;
+  grid-column: full-start / col-end 4;
+  background-image: linear-gradient(rgba(11, 69, 77, 0.5), rgba(11, 69, 77, 0.5)), url(../images/etna-2.jpeg);
+  background-size: cover;
+  display: grid;
+  grid-template-rows: repeat(7, 1fr);
+  grid-template-columns: repeat(7, 1fr);
+  align-items: center; }
+  @media only screen and (max-width: 50em) {
+    .section-destination-3__pictures {
+      grid-column: 1 / -1;
+      padding: 6rem; } }
+
+/* ------------------------------------------- */
+/* DESTINATION 4 | IN HOME PAGE
+/* ------------------------------------------- */
+.section-destination-4__pictures {
+  background-color: #0b454d;
+  grid-column: full-start / col-end 4;
+  background-image: linear-gradient(rgba(11, 69, 77, 0.5), rgba(11, 69, 77, 0.5)), url(../images/wall-1.jpg);
+  background-size: cover;
+  display: grid;
+  grid-template-rows: repeat(7, 1fr);
+  grid-template-columns: repeat(7, 1fr);
+  align-items: center; }
+  @media only screen and (max-width: 50em) {
+    .section-destination-4__pictures {
+      grid-column: 1 / -1;
+      padding: 6rem; } }
+
 /* - PAGES FOLDER FILES - */
 /* ------------------------------------------- */
 /* SECTION FEATURES | IN HOME PAGE
@@ -672,3 +733,7 @@ body .container {
   display: grid;
   grid-template-rows: min-content;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 15rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+
+.container-1 {
+  /*display: grid;
+    grid-template-rows: 100vh;*/ }
