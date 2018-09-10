@@ -15,6 +15,7 @@
         grid-template-rows: repeat(7, 1fr);
         grid-template-columns: repeat(7, 1fr);
         align-items: center;
+        grid-row-gap: 5rem;
 
         // * --- MEDIA QUERIES --- * \\
         @media only screen and (max-width: $bp-medium) {    
@@ -55,15 +56,15 @@
 
         grid-column: col-start 5 / full-end;
 
-        padding: 6rem 8vw;
+        padding: 1rem 8vw;
 
         // FLEXBOX SETUP | FLEXBOX APPROACH \\
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+        grid-row-gap: 5rem;
 
-        // * --- MEDIA QUERIES --- * \\
         @media only screen and (max-width: $bp-medium) {    
             grid-column: 1 / -1;
             grid-row: 5 / 6;        
@@ -94,11 +95,32 @@
         grid-template-rows: repeat(7, 1fr);
         grid-template-columns: repeat(7, 1fr);
         align-items: center;
+        grid-row-gap: 5rem;
 
         // * --- MEDIA QUERIES --- * \\
         @media only screen and (max-width: $bp-medium) {    
             grid-column: 1 / -1;
             padding: 6rem;        
+        }
+    }
+
+    &__content {
+        background-color: $color-grey-light-1;
+
+        grid-column: col-start 5 / full-end;
+
+        padding: 1rem 8vw;
+
+        // FLEXBOX SETUP | FLEXBOX APPROACH \\
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        grid-row-gap: 5rem;
+
+        @media only screen and (max-width: $bp-medium) {    
+            grid-column: 1 / -1;
+            grid-row: 5 / 6;        
         }
     }
 }
@@ -120,11 +142,32 @@
         grid-template-rows: repeat(7, 1fr);
         grid-template-columns: repeat(7, 1fr);
         align-items: center;
+        grid-row-gap: 5rem;
 
         // * --- MEDIA QUERIES --- * \\
         @media only screen and (max-width: $bp-medium) {    
             grid-column: 1 / -1;
             padding: 6rem;        
+        }
+    }
+
+    &__content {
+        background-color: $color-grey-light-1;
+
+        grid-column: col-start 5 / full-end;
+
+        padding: 4rem 8vw;
+
+        // FLEXBOX SETUP | FLEXBOX APPROACH \\
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        grid-row-gap: 5rem;
+
+        @media only screen and (max-width: $bp-medium) {    
+            grid-column: 1 / -1;
+            grid-row: 5 / 6;        
         }
     }
 }
@@ -151,6 +194,26 @@
         @media only screen and (max-width: $bp-medium) {    
             grid-column: 1 / -1;
             padding: 6rem;        
+        }
+    }
+
+    &__content {
+        background-color: $color-grey-light-1;
+
+        grid-column: col-start 5 / full-end;
+
+        padding: 1rem 8vw;
+
+        // FLEXBOX SETUP | FLEXBOX APPROACH \\
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        grid-row-gap: 5rem;
+
+        @media only screen and (max-width: $bp-medium) {    
+            grid-column: 1 / -1;
+            grid-row: 5 / 6;        
         }
     }
 }
