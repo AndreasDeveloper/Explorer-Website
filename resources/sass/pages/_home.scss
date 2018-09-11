@@ -5,7 +5,7 @@
 .container-3 {
     display: grid;
     grid-template-rows: 40vh 1vh;
-    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end] ) [center-end] minmax(6rem, 1fr) [full-end];
+    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end] ) [center-end] minmax(30rem, 1fr) [full-end];
 }
 
 .container-2 {
@@ -14,8 +14,8 @@
     grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 15rem) [col-end] ) [center-end] minmax(6rem, 1fr) [full-end];
 }
 
-.container-1 {
-    /*display: grid;
-    grid-template-rows: 100vh;*/
-    //grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end] ) [center-end] minmax(6rem, 1fr) [full-end];
-}
+/*.container-1 {
+    display: grid;
+    grid-template-rows: 90vh 15vh;
+    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(4, [col-start] minmax(min-content, 150rem) [col-end] ) [center-end] minmax(6rem, 1fr) [full-end];
+}*/

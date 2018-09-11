@@ -23,6 +23,8 @@
     overflow: hidden;
     display: table;
     color: $color-grey-light;
+
+    display: grid;
 }
 
 // CONTENT WRAPPER
@@ -63,6 +65,11 @@
     left: -15rem;
     margin: 0;
     transform: rotate(-90deg) translateY(50%);
+
+    // * --- MEDIA QUERIES --- * \\
+    @media only screen and (max-width: $bp-small) {
+        font-size: 1.2rem;
+    }
 }
 
 .coords-2 {
@@ -74,6 +81,11 @@
     right: -28%;
     letter-spacing: .2rem;
     margin: 0;
+
+    // * --- MEDIA QUERIES --- * \\
+    @media only screen and (max-width: $bp-medium) {  
+        top: 180%;
+    }
 }
 
 /* ------------------------------------------- */
@@ -81,12 +93,19 @@
 /* ------------------------------------------- */
 
 .ellipse-container {
-    width: 50rem;
+    max-width: 50rem;
     height: 50rem;
     border-radius: 50%;
     margin: 0 auto;
     position: relative;
     top: 7rem;
+
+    // * --- MEDIA QUERIES --- * \\
+    @media only screen and (max-width: $bp-small) {
+        width: 40rem;
+        height: 40rem;
+        margin: auto;
+    }
 
     &__text {
         position: relative;
@@ -99,11 +118,19 @@
         font-size: 8rem;
         font-weight: 400;
         opacity: .6;
+        -moz-opacity: .6;
+        -webkit-opacity: .6;
+
+        // * --- MEDIA QUERIES --- * \\
+        @media only screen and (max-width: $bp-small) {
+            font-size: 4rem;
+        }
 
     // SETUP THE TEXT (h2) TO DISPLAY WITH MULTIPLE COLORS IN THE BACKGROUND \\
     display: inline-block;
     background-image: linear-gradient(to right, #0C383E, #0C383E);
     -webkit-background-clip: text;
+    -moz-background-clip: text;
     color: transparent;
     }
 }
@@ -182,4 +209,10 @@
     position: absolute;
     top: 90%;
     left: 34%;
+
+    // * --- MEDIA QUERIES --- * \\
+    @media only screen and (max-width: $bp-small) {
+        top: 88%;
+        left: 14%;
+    }
 }

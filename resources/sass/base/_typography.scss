@@ -126,7 +126,7 @@ body {
     justify-content: center;
 
     display: grid;
-    grid-template-columns: 50rem max-content 50rem;
+    grid-template-columns: 1fr max-content 1fr;
     grid-column-gap: 1.5rem;
     align-items: center;
 
@@ -137,6 +137,9 @@ body {
         display: block;
         background-color: currentColor;     // COLOR GREY LIGHT 2
     }
+
+    // * --- MEDIA QUERIES --- * \\
+
 }
 
 /* ------------------------------------------------ */
