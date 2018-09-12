@@ -10,5 +10,5 @@
 
 <b>TOOLS USED</b>
 
-- Tools Used for this project: HTML5, CSS3 + SASS, Javascript + JQuery, JSON (For scripts and NPM packages management)
+- Tools Used for this project: HTML5, CSS3 + SASS, Javascript + JQuery, JSON (For scripts and NPM packages management), GSAP (For Animations).
 - BEM Methodology
