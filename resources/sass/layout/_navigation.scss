@@ -1,0 +1,71 @@
+/* ------------------------------------------- */
+/* NAVIGATION
+/* ------------------------------------------- */
+
+.nav {
+    position: fixed;
+    height: 100vh;
+    width: 100vh;
+    z-index: 200;
+}
+
+.toggle-btn {
+    position: fixed;
+    top: 2rem;
+    margin: 1.4em;
+    width: 4rem;
+    height: 1.2rem;
+    right: 0;
+    z-index: 111;
+    cursor: pointer;
+}
+
+span.one {
+    position: absolute;
+    width: 4rem;
+    height: .2rem;
+    background: $color-white;
+}
+
+span.two {
+    position: absolute;
+    width: 4rem;
+    height: .2rem;
+    background: $color-white;
+    margin-top: 1.2rem;
+}
+
+.menu {
+    z-index: 110;
+    position: absolute;
+    background: #101010;
+    height: 100vh;
+    width: 205vh;
+    top: -105%;
+}
+
+.data {
+    padding: 8em 0 0 2em;
+    text-align: left;
+}
+
+ul {
+    list-style: none;
+}
+
+li:first-child {
+    color: $color-primary;
+    font-family: 'Lato';
+    font-size: 2.4rem;
+}
+
+li:not(:first-child) {
+    color: $color-white;
+    font-size: 4.2rem;
+}
+
+a {
+    text-decoration: none;
+    color: $color-white;
+    font-family: 'Lato';
+}
