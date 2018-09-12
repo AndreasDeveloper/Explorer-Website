@@ -197,7 +197,7 @@ body {
   color: #0b454d;
   justify-content: center;
   display: grid;
-  grid-template-columns: 1fr max-content 1fr;
+  grid-template-columns: 20% max-content 20%;
   grid-column-gap: 1.5rem;
   align-items: center; }
   .section-text::before, .section-text::after {
@@ -325,11 +325,11 @@ body .container {
 /* ANIMATION FOR TYPWRITER
 /* ------------------------------------------- */
 .animate-typewriter {
-  animation: typewriter 4s steps(40) 1s 1 normal both, blinkTextCursor 0.5s steps(40) infinite normal; }
+  animation: typewriter 4s steps(40) 1s 1 normal both, blinkTextCursor 500ms steps(40) infinite normal; }
 
 @keyframes typewriter {
   from {
-    width: 0em; }
+    width: 0; }
   to {
     width: 15.1em; } }
 
@@ -820,8 +820,8 @@ body .container {
 
 .toggle-btn {
   position: fixed;
-  top: 2rem;
-  margin: 1.4em;
+  top: 5%;
+  margin: 3.4rem;
   width: 4rem;
   height: 1.2rem;
   right: 0;
@@ -832,13 +832,13 @@ span.one {
   position: absolute;
   width: 4rem;
   height: .2rem;
-  background: #fff; }
+  background: #09383E; }
 
 span.two {
   position: absolute;
   width: 4rem;
   height: .2rem;
-  background: #fff;
+  background: #09383E;
   margin-top: 1.2rem; }
 
 .menu {
