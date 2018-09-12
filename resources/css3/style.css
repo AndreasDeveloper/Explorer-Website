@@ -576,9 +576,8 @@ body .container {
     letter-spacing: 4rem;
     font-size: 8rem;
     font-weight: 400;
-    opacity: .6;
-    -moz-opacity: .6;
-    -webkit-opacity: .6;
+    -webkit-filter: opacity(0.6);
+    filter: opacity(0.6);
     display: inline-block;
     background-image: linear-gradient(to right, #0C383E, #0C383E);
     -webkit-background-clip: text;
@@ -612,7 +611,8 @@ body .container {
   right: 0;
   color: #fff;
   position: absolute;
-  opacity: .3; }
+  -webkit-filter: opacity(0.3);
+  filter: opacity(0.3); }
 
 .ellipse__outer--thick {
   width: 99.5%;

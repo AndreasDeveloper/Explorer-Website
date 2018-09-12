@@ -117,9 +117,8 @@
         letter-spacing: 4rem;
         font-size: 8rem;
         font-weight: 400;
-        opacity: .6;
-        -moz-opacity: .6;
-        -webkit-opacity: .6;
+        -webkit-filter: opacity(.6);
+        filter: opacity(.6);
 
         // * --- MEDIA QUERIES --- * \\
         @media only screen and (max-width: $bp-small) {
@@ -162,7 +161,8 @@
     right: 0;
     color: $color-white;
     position: absolute;
-    opacity: .3;
+    -webkit-filter: opacity(.3);
+    filter: opacity(.3);
 }
 
 // THICK LINE
